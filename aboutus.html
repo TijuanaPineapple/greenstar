@@ -14,21 +14,6 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="css/gsstyles.css" />
-
-    <nav class="navbar navbar-expand- navbar-dark text-white fixed-top">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-        </ul>
-        <ul>
-            <li><a href="#">About</a></li>
-        </ul>
-        <ul>
-            <li><a href="#">Purchase</a></li>
-        </ul>
-        <ul>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
     
     <title>Green Star Solar Panels</title>
 </head>
@@ -36,27 +21,44 @@
 <body style="background-color: rgb(215, 231, 158);">
 
     <header class="jumbotron jumbotron-fluid">
-        <div class="container">
+        <div class="container text-left">
             <div class="row">
-                <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <img src="" class="img-fluid" />
+                <div class="col-4 col-sm-3 col-md-2 mt-3 align-self-center">
+                    <img src="img/solarcells.jpg" class="img-fluid" />
                 </div>
                 <div class="col">
-                    <h1>About Our Company</h1>
+                    <h1>About Us</h1>
                 </div>
             </div>
         </div>
     </header>
 
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"></a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#greenstarNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="greenNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="purchase.html"><i class="fa fa-list fa-lg"></i> Purchase</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="row align-items-center">
             <div class="col my-5">
-                <h1>Green Star Products and Team</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nam at lectus urna duis convallis. Mi sit amet mauris commodo quis imperdiet massa tincidunt. Sed libero enim sed faucibus turpis. Pharetra convallis posuere morbi leo urna molestie at elementum. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Nibh sed pulvinar proin gravida hendrerit. Augue eget arcu dictum varius duis at consectetur lorem. Scelerisque viverra mauris in aliquam sem fringilla. Tincidunt lobortis feugiat vivamus at augue eget. Netus et malesuada fames ac turpis egestas integer eget aliquet.</p>
+                <h1><strong>Mission Statement</strong></h1>
+                <p>Here at Green Star Solar Panel Company we aim to make sure you have access to the best quality and most efficient solar panels available. Our team consists of skilled individuals that aim to make sure your experience is nothing short of satisfactory. Check out our Team and Products below! </p>
     
             </div>
             <div class="row row-content">
-                <div class="col-md-8 mx-auto">
+                <div class="col">
                     <div id="homeCarousel" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
@@ -65,7 +67,7 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="img/team-working-by-group-video-600w-1694685136.webp" alt="Our Team" />
+                                <img class="d-block w-100" src="img/team.png" alt="Our Team" />
                                 <div class="carousel-caption">
                                     <h3>Our Team</h3>
                                     <p class="d-none d-sm-block">We are here to help!</p>
@@ -74,14 +76,14 @@
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="img/panels1.jpg" alt="Product 1" />
                                 <div class="carousel-caption">
-                                    <h3>Product 1- Green Leaf</h3>
+                                    <h3>Green Leaf</h3>
                                     <p class="d-none d-sm-block">Product 1</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="img/panels2.webp" alt="Product 2" />
+                                <img class="d-block w-100" src="img/panels2 copy.png" alt="Product 2" />
                                 <div class="carousel-caption">
-                                    <h3>Product 2- Green Tree</h3>
+                                    <h3>Green Tree</h3>
                                     <p class="d-none d-sm-block">Product 2</p>
                                 </div>
                             </div>
@@ -94,11 +96,53 @@
                             <span class="carousel-control-next-icon"></span>
                             <span class="sr-only">Next</span>
                         </a>
-                        <button class="btn btn-danger btn-sm" id="carouselButton">
-                            <i class="fa fa-pause"></i>
-                        </button> 
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-content" id="aboutUsDrop">
+        <div class="col">
+            <h3>About Us</h3>
+            <div id="accordion">
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4 class="text-white">
+                            <a data-toggle="collapse" data-target="#bootstrap">Our Team <small class="text-dark">Solar Panel Specialists</small></a>
+                        </h4>
+                        <div class="collapse show" id="bootstrap" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block text-white">Our team of experienced installers and costumer service representatives have over 50 year experience between them. Our team is here to answer any questions you may have! Links to our social media pages, email and phone are below.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4 class="text-white">
+                            <a class="collapsed" data-toggle="collapse" data-target="#git">Green Leaf <small class="text-dark">Product One </small></a>
+                        </h4>
+                        <div class="collapse" id="git" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block text-white">Our Green Leaf option allows you to have Polycrystalline Solar Panels at our lowest cost to perform our basic lowest efficiency level. This option will save you 20% of your yearly energy bill. Panels start at $100 each. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4 class="text-white">
+                            <a class="collapsed" data-toggle="collapse" data-target="#mongo">Green Tree <small class="text-dark">Product Two</small></a>
+                        </h4>
+                        <div class="collapse" id="mongo" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block text-white">Our Green Tree option allows you to have Monocrystalline Solar Panels at an upgraded cost to perform at high efficiency. This option will save you 50% of your yearly energy bill. Panels start at $250 each.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
             </div>
         </div>
     </div>
@@ -106,23 +150,23 @@
     <footer class="site-footer">
         <div class="container">
             <div class="row">
-                <div class="col-4 col-sm-2 offset-1">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
+                <div class="col-4 col-sm-3 col-md-2 mt-3 align-self-center">
+                    <h5 class="text-white">Links</h5>
+                    <ul class="list-unstyled text-white">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="aboutus.html">About</a></li>
                         <li><a href="#">Purchase</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-sm-5 text-center">
+                <div class="col-6 col-sm-5 text-right">
                     <h5>Social</h5>
                     <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
                     <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
                 </div>
-                <div class="col-sm-4 text-center">
-                    <a role="button" class="btn btn-link" href="tel:+123456789"><i class="fa fa-phone"></i> 1-555-555-1234</a><br>
-                    <a role="button" class="btn btn-link" href="mailto:This is just a test"><i class="fa fa-envelope-o"></i> greenstarsolar@gss.com</a>
+                <div class="col text-right">
+                    <a role="button" class="btn btn-outline-light" href="tel:+123456789"><i class="fa fa-phone"></i> 1-555-555-1234</a><br>
+                    <a role="button" class="btn btn-outline-light" href="mailto:This is just a test"><i class="fa fa-envelope-o"></i> greenstarsolar@gss.com</a>
                 </div>
            </div>
         </div>
